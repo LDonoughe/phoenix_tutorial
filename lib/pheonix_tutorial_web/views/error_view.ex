@@ -1,5 +1,5 @@
-defmodule PheonixTutorialWeb.ErrorView do
-  use PheonixTutorialWeb, :view
+defmodule PhoenixTutorialWeb.ErrorView do
+  use PhoenixTutorialWeb, :view
 
   def render("404.html", _assigns) do
     "Page not found"

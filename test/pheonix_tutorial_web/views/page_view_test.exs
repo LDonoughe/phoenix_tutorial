@@ -1,3 +1,3 @@
-defmodule PheonixTutorialWeb.PageViewTest do
-  use PheonixTutorialWeb.ConnCase, async: true
+defmodule PhoenixTutorialWeb.PageViewTest do
+  use PhoenixTutorialWeb.ConnCase, async: true
 end

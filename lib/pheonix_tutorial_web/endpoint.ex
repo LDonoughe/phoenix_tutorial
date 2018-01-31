@@ -1,14 +1,14 @@
-defmodule PheonixTutorialWeb.Endpoint do
-  use Phoenix.Endpoint, otp_app: :pheonix_tutorial
+defmodule PhoenixTutorialWeb.Endpoint do
+  use Phoenix.Endpoint, otp_app: :phoenix_tutorial
 
-  socket "/socket", PheonixTutorialWeb.UserSocket
+  socket "/socket", PhoenixTutorialWeb.UserSocket
 
   # Serve at "/" the static files from "priv/static" directory.
   #
   # You should set gzip to true if you are running phoenix.digest
   # when deploying your static files in production.
   plug Plug.Static,
-    at: "/", from: :pheonix_tutorial, gzip: false,
+    at: "/", from: :phoenix_tutorial, gzip: false,
     only: ~w(css fonts images js favicon.ico robots.txt)
 
   # Code reloading can be explicitly enabled under the
@@ -35,10 +35,10 @@ defmodule PheonixTutorialWeb.Endpoint do
   # Set :encryption_salt if you would also like to encrypt it.
   plug Plug.Session,
     store: :cookie,
-    key: "_pheonix_tutorial_key",
+    key: "_phoenix_tutorial_key",
     signing_salt: "/1D4bQhm"
 
-  plug PheonixTutorialWeb.Router
+  plug PhoenixTutorialWeb.Router
 
   @doc """
   Callback invoked for dynamically configuring the endpoint.

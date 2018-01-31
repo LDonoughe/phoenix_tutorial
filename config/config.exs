@@ -6,15 +6,15 @@
 use Mix.Config
 
 # General application configuration
-config :pheonix_tutorial,
-  ecto_repos: [PheonixTutorial.Repo]
+config :phoenix_tutorial,
+  ecto_repos: [PhoenixTutorial.Repo]
 
 # Configures the endpoint
-config :pheonix_tutorial, PheonixTutorialWeb.Endpoint,
+config :phoenix_tutorial, PhoenixTutorialWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "BFB8MhgeNUjDrBKTeGNbHV957nj8PQeMwr/JiY/qSpF6cD/fZXLFT393CJXPperL",
-  render_errors: [view: PheonixTutorialWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: PheonixTutorial.PubSub,
+  render_errors: [view: PhoenixTutorialWeb.ErrorView, accepts: ~w(html json)],
+  pubsub: [name: PhoenixTutorial.PubSub,
            adapter: Phoenix.PubSub.PG2]
 
 # Configures Elixir's Logger

@@ -1,5 +1,5 @@
-defmodule PheonixTutorialWeb.PageController do
-  use PheonixTutorialWeb, :controller
+defmodule PhoenixTutorialWeb.PageController do
+  use PhoenixTutorialWeb, :controller
 
   def index(conn, _params) do
     render conn, "index.html"

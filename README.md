@@ -1,4 +1,4 @@
-# PheonixTutorial
+# PhoenixTutorial
 
 To start your Phoenix server:
 

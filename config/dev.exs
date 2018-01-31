@@ -6,7 +6,7 @@ use Mix.Config
 # The watchers configuration can be used to run external
 # watchers to your application. For example, we use it
 # with brunch.io to recompile .js and .css sources.
-config :pheonix_tutorial, PheonixTutorialWeb.Endpoint,
+config :phoenix_tutorial, PhoenixTutorialWeb.Endpoint,
   http: [port: 4000],
   debug_errors: true,
   code_reloader: true,
@@ -31,13 +31,13 @@ config :pheonix_tutorial, PheonixTutorialWeb.Endpoint,
 # different ports.
 
 # Watch static and templates for browser reloading.
-config :pheonix_tutorial, PheonixTutorialWeb.Endpoint,
+config :phoenix_tutorial, PhoenixTutorialWeb.Endpoint,
   live_reload: [
     patterns: [
       ~r{priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$},
       ~r{priv/gettext/.*(po)$},
-      ~r{lib/pheonix_tutorial_web/views/.*(ex)$},
-      ~r{lib/pheonix_tutorial_web/templates/.*(eex)$}
+      ~r{lib/phoenix_tutorial_web/views/.*(ex)$},
+      ~r{lib/phoenix_tutorial_web/templates/.*(eex)$}
     ]
   ]
 
@@ -49,10 +49,10 @@ config :logger, :console, format: "[$level] $message\n"
 config :phoenix, :stacktrace_depth, 20
 
 # Configure your database
-config :pheonix_tutorial, PheonixTutorial.Repo,
+config :phoenix_tutorial, PhoenixTutorial.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: "postgres",
   password: "postgres",
-  database: "pheonix_tutorial_dev",
+  database: "phoenix_tutorial_dev",
   hostname: "localhost",
   pool_size: 10

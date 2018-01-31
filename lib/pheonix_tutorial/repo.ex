@@ -1,5 +1,5 @@
-defmodule PheonixTutorial.Repo do
-  use Ecto.Repo, otp_app: :pheonix_tutorial
+defmodule PhoenixTutorial.Repo do
+  use Ecto.Repo, otp_app: :phoenix_tutorial
 
   @doc """
   Dynamically loads the repository url from the

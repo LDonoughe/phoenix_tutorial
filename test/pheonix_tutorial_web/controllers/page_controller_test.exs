@@ -1,5 +1,5 @@
-defmodule PheonixTutorialWeb.PageControllerTest do
-  use PheonixTutorialWeb.ConnCase
+defmodule PhoenixTutorialWeb.PageControllerTest do
+  use PhoenixTutorialWeb.ConnCase
 
   test "GET /", %{conn: conn} do
     conn = get conn, "/"

@@ -1,3 +1,3 @@
-defmodule PheonixTutorialWeb.LayoutViewTest do
-  use PheonixTutorialWeb.ConnCase, async: true
+defmodule PhoenixTutorialWeb.LayoutViewTest do
+  use PhoenixTutorialWeb.ConnCase, async: true
 end

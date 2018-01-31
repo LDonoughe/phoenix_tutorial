@@ -1,4 +1,4 @@
-defmodule PheonixTutorialWeb.ChannelCase do
+defmodule PhoenixTutorialWeb.ChannelCase do
   @moduledoc """
   This module defines the test case to be used by
   channel tests.
@@ -21,15 +21,15 @@ defmodule PheonixTutorialWeb.ChannelCase do
       use Phoenix.ChannelTest
 
       # The default endpoint for testing
-      @endpoint PheonixTutorialWeb.Endpoint
+      @endpoint PhoenixTutorialWeb.Endpoint
     end
   end
 
 
   setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(PheonixTutorial.Repo)
+    :ok = Ecto.Adapters.SQL.Sandbox.checkout(PhoenixTutorial.Repo)
     unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(PheonixTutorial.Repo, {:shared, self()})
+      Ecto.Adapters.SQL.Sandbox.mode(PhoenixTutorial.Repo, {:shared, self()})
     end
     :ok
   end

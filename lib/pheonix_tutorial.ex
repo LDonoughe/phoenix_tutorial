@@ -1,6 +1,6 @@
-defmodule PheonixTutorial do
+defmodule PhoenixTutorial do
   @moduledoc """
-  PheonixTutorial keeps the contexts that define your domain
+  PhoenixTutorial keeps the contexts that define your domain
   and business logic.
 
   Contexts are also responsible for managing your data, regardless

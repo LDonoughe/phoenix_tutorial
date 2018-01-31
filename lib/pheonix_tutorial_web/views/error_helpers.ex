@@ -1,4 +1,4 @@
-defmodule PheonixTutorialWeb.ErrorHelpers do
+defmodule PhoenixTutorialWeb.ErrorHelpers do
   @moduledoc """
   Conveniences for translating and building error messages.
   """
@@ -32,9 +32,9 @@ defmodule PheonixTutorialWeb.ErrorHelpers do
     #     dgettext "errors", "is invalid"
     #
     if count = opts[:count] do
-      Gettext.dngettext(PheonixTutorialWeb.Gettext, "errors", msg, msg, count, opts)
+      Gettext.dngettext(PhoenixTutorialWeb.Gettext, "errors", msg, msg, count, opts)
     else
-      Gettext.dgettext(PheonixTutorialWeb.Gettext, "errors", msg, opts)
+      Gettext.dgettext(PhoenixTutorialWeb.Gettext, "errors", msg, opts)
     end
   end
 end

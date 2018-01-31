@@ -1,4 +1,4 @@
 ExUnit.start()
 
-Ecto.Adapters.SQL.Sandbox.mode(PheonixTutorial.Repo, :manual)
+Ecto.Adapters.SQL.Sandbox.mode(PhoenixTutorial.Repo, :manual)
 

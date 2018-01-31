@@ -1,5 +1,5 @@
-defmodule PheonixTutorialWeb.Router do
-  use PheonixTutorialWeb, :router
+defmodule PhoenixTutorialWeb.Router do
+  use PhoenixTutorialWeb, :router
 
   pipeline :browser do
     plug :accepts, ["html"]
@@ -13,14 +13,14 @@ defmodule PheonixTutorialWeb.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/", PheonixTutorialWeb do
+  scope "/", PhoenixTutorialWeb do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", PheonixTutorialWeb do
+  # scope "/api", PhoenixTutorialWeb do
   #   pipe_through :api
   # end
 end

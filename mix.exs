@@ -1,9 +1,9 @@
-defmodule PheonixTutorial.Mixfile do
+defmodule PhoenixTutorial.Mixfile do
   use Mix.Project
 
   def project do
     [
-      app: :pheonix_tutorial,
+      app: :phoenix_tutorial,
       version: "0.0.1",
       elixir: "~> 1.4",
       elixirc_paths: elixirc_paths(Mix.env),
@@ -19,7 +19,7 @@ defmodule PheonixTutorial.Mixfile do
   # Type `mix help compile.app` for more information.
   def application do
     [
-      mod: {PheonixTutorial.Application, []},
+      mod: {PhoenixTutorial.Application, []},
       extra_applications: [:logger, :runtime_tools]
     ]
   end
@@ -40,7 +40,8 @@ defmodule PheonixTutorial.Mixfile do
       {:phoenix_html, "~> 2.10"},
       {:phoenix_live_reload, "~> 1.0", only: :dev},
       {:gettext, "~> 0.11"},
-      {:cowboy, "~> 1.0"}
+      {:cowboy, "~> 1.0"},
+      {:comeonin, "~> 4.0"}
     ]
   end
 

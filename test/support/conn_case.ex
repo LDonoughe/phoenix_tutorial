@@ -1,4 +1,4 @@
-defmodule PheonixTutorialWeb.ConnCase do
+defmodule PhoenixTutorialWeb.ConnCase do
   @moduledoc """
   This module defines the test case to be used by
   tests that require setting up a connection.
@@ -19,18 +19,18 @@ defmodule PheonixTutorialWeb.ConnCase do
     quote do
       # Import conveniences for testing with connections
       use Phoenix.ConnTest
-      import PheonixTutorialWeb.Router.Helpers
+      import PhoenixTutorialWeb.Router.Helpers
 
       # The default endpoint for testing
-      @endpoint PheonixTutorialWeb.Endpoint
+      @endpoint PhoenixTutorialWeb.Endpoint
     end
   end
 
 
   setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(PheonixTutorial.Repo)
+    :ok = Ecto.Adapters.SQL.Sandbox.checkout(PhoenixTutorial.Repo)
     unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(PheonixTutorial.Repo, {:shared, self()})
+      Ecto.Adapters.SQL.Sandbox.mode(PhoenixTutorial.Repo, {:shared, self()})
     end
     {:ok, conn: Phoenix.ConnTest.build_conn()}
   end

@@ -1,3 +1,3 @@
-defmodule PheonixTutorialWeb.LayoutView do
-  use PheonixTutorialWeb, :view
+defmodule PhoenixTutorialWeb.LayoutView do
+  use PhoenixTutorialWeb, :view
 end
