@@ -1,6 +1,7 @@
 defmodule PhoenixTutorial.User do
   use Ecto.Schema
   import Ecto.Changeset
+  import Comeonin.Bcrypt
   alias PhoenixTutorial.User
 
 
@@ -27,7 +28,7 @@ defmodule PhoenixTutorial.User do
   defp generate_encrypted_password(current_changeset) do
     case current_changeset do
       %Ecto.Changeset{valid?: true, changes: %{password: password}} ->
-        put_change(current_changeset, :password_hash, Comeonin.Bcrypt.hashpwsalt(password))
+        put_change(current_changeset, :password_hash, hashpwsalt(password))
       _ ->
         current_changeset
     end
